@@ -1,0 +1,44 @@
+<h1>Prouptime - Signup</h1>
+<style>
+.prouptime_info {
+max-width: 600px;
+margin-bottom:20px;
+
+}
+
+.prouptime_error {
+ color: #900;
+}
+</style>
+<script>
+
+</script>
+<div class="box" style='background-color: #ffffff; max-width: 600px; padding: 20px; margin: 20px 0; border-radius: 4px; min-height: 300px; border-left: 1px solid #ecedf3; border-top: 1px solid #ecedf3; border-right: 2px solid #ecedf3; border-bottom: 2px solid #ecedf3; box-shadow: 0 0rem .75rem 0.0375rem rgba(132,138,163,0.1) !important; font-weight: 400; line-height: 27px;' >
+<a href="https://prouptime.com"><img src="http://prouptime.com/img/prouptime.png" style="height: 40px; margin-bottom:10px" alt="prouptime.com"></a><br>
+
+
+<div class="prouptime_info">
+By clicking "Sign Up" you confirm that Prouptime is allowed to store the data below, and use it to monitor the uptime of your blog and notify you.
+</div>
+
+
+<table>
+	<tr><td width="120px"><b>Site Name:</b></td><td>%sitename%</td></tr>
+	<tr><td><b>Admin Email:</b></td><td>%email%</td></tr>
+	<tr><td><b>Blog Url:</b></td><td>%siteurl%</td></tr>
+	<tr><td><b>Timezone:</b></td><td>%timezone%</td></tr>
+	<tr><td><b>Locale:</b></td><td>%locale%</td></tr>
+
+</table>
+
+	<br>
+<form method="POST">
+  <input type="hidden" name="p" value="1">
+	<input type="checkbox" name="agb" value="1"> Please confirm our <a href="https://prouptime.com/terms.html" target="_blank">terms and conditions</a> &amp; <a href="https://prouptime.com/privacy.html" target="_blank">privacy policy</a>
+%error%
+	<br>
+	<br>
+	<input type="submit" value="Sign Up">
+</form>
+
+</div>
